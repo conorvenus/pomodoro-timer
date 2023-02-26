@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-red-500;
+}
+
+.minutes-list::before {
+  content: '';
+  position: absolute;
+  height: 100%; 
+  background: linear-gradient(to right, #EF4444, transparent);
+  width: 10rem;
+  left: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.minutes-list::after {
+  content: '';
+  position: absolute;
+  height: 100%; 
+  background: linear-gradient(to left, #EF4444, transparent);
+  width: 10rem;
+  right: 0;
+  pointer-events: none;
+  z-index: 1;
+}
